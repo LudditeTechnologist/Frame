@@ -1,10 +1,15 @@
 <?php
-	public var $hello = 'hello';
-
+	
 	class HelloWorld
 	{
-		private function __construct()
+		var $hello = 'hello';
+
+		function __construct()
 		{
-			echo $hello;
+			echo $this->hello;
 		}
-	}?>
+	}
+	
+	$hi = new HelloWorld;
+		
+?>
